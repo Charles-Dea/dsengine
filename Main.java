@@ -7,11 +7,11 @@ class Main extends JFrame{
         new Main();
     }
     Main(){
-        Dimension d=new Dimension(512,512);
-        setPreferredSize(d);
-        setLayout(new BorderLayout());
+        Dimension d=new Dimension(1024,1024);
+        this.setPreferredSize(d);
+        this.setLocation(0,0);
+        this.setLayout(new BorderLayout());
         GraphicsEngine g=new GraphicsEngine(this,d);
-        setVisible(true);
-        //g.repaint();
+        while(true){}
     }
 }

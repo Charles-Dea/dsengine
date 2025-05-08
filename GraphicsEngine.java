@@ -10,6 +10,7 @@ class GraphicsEngine extends JPanel{
         Graphics2D g=(Graphics2D)gr;
         g.setColor(Color.RED);
         g.fillOval(200,200,512,512);
+        repaint();
     }
     GraphicsEngine(Main w,Dimension d){
         w.add(this,BorderLayout.CENTER);
